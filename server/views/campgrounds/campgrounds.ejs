@@ -1,0 +1,35 @@
+<%-include('../partials/header')%>
+
+
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>Work-Out to Grow Bigger</h1>
+                <p>We show you all camp around the world. Search for the best place for you.</p>
+                <p>
+                    <a class="btn btn-primary btn-large" href="/campgrounds/new">Add New Fitness</a>
+                </p>
+            </div>
+        </header>
+
+        <div class="row text-center animate slideInUp campground-animate">
+            <%campgrounds.forEach(function(campground){ %>
+                <div class="col-md-3 ">
+                    <div class="img-thumbnail campground_main">
+                        <img  src="<%=campground.image%>" alt="A campground picture">
+                        <div class="caption">
+                            <h4><%= campground.name %></h4>
+                        </div>
+                        <div>
+                            <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>  
+        </div>
+        
+
+    </div>
+
+
+    <%-include('../partials/footer')%>

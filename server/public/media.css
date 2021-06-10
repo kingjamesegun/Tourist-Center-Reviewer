@@ -1,0 +1,22 @@
+@media only screen and (max-width: 480px){
+
+}
+
+@media only screen and (max-width: 748px){
+    .main-body{
+        margin-top: 20%;
+    }
+    .campground-form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 1200px){
+
+}

@@ -1,0 +1,18 @@
+<%-include('../partials/header')%>
+
+<div class="container">
+    <div class="profile">
+        <img src="/assets/cycling.jpg" alt="" class="profile-pics">
+        <a href="/profile/<%=profile._id%>/edit">Edit Profile</a>
+    </div>
+    <div class="profile-lists">
+        <ul> 
+            <li><span>Username</span> <%=profile.username%></li>
+            <li><span>Password</span> segun#3654</li>
+            <li><span>Log</span> <a href="/logout">Logout</a></li>
+        </ul>
+        
+    </div>
+</div>
+
+<%-include("../partials/footer")%>

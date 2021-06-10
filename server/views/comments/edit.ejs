@@ -1,0 +1,17 @@
+<%-include('../partials/header')%>
+
+    <h1 class="text-center">Edit Comment</h1>
+
+    <div class="campground-form animate fadeIn form-animate">
+        <form action="/campgrounds/<%= campground_id%>/comments/<%=comment._id%>?_method=PUT" method="POST" class="form-signin">
+            <div class="form-group">
+                <input type="text" class="form-control" name="comment[text]" value="<%=comment.text %>">
+            </div>
+            <div class="form-group">
+                <button class="btn bg-dark btn-block">Submit</button>
+            </div>
+        </form>     
+        <a href="/campgrounds">Back to Camp</a>
+    </div>
+
+    <%-include('../partials/footer')%>

@@ -1,0 +1,93 @@
+body{
+    color: #343a40!important;
+}
+p{
+    font-family: "pt sans narrow";
+    font-size: 18px;
+}
+h1{
+    font-family: Bitter;
+    line-height: 30px;
+}
+h4{
+    font-family: "playfair display";
+}
+.main-section{
+    margin-top: 3%;
+}
+.links{
+    color: #fff !important;
+}
+.main{
+    padding: 10% 10%;
+    border: 1px solid #979899
+}
+.video{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.sidebar{
+    background-color: #f8f9fa;
+    padding: 10%;
+    height: 100vh;
+}
+nav{
+    margin-bottom: 3%;
+}
+ul{
+    list-style: none;
+    padding: 0 !important;
+}
+.sidebar ul li{
+    margin: 10px 0;
+    border-bottom: 1px solid #979899;
+    padding-bottom: 5px;
+}
+.main-camp{
+    display: flex;
+    flex-wrap: wrap
+}
+img{
+    width: 100%
+}
+.campground-form{
+    width: 30%;
+    margin: 0 auto;
+}
+.right{
+    float: right
+}
+.des{
+    padding: 10px;
+}
+#delete-form{
+    display: inline;
+}
+.campground_main{
+    margin-bottom: 40px;
+}
+button{
+    color: #fff !important
+}
+.main-body{
+    margin-top: 7%;
+}
+.camp-footer{
+    color: #979899;
+    text-align: center;
+    margin: 4% 0 2% 0;
+}
+.show-details{
+    margin-bottom: 7%;
+}
+.title{
+    text-transform: uppercase;
+    color: #343a40;
+}
+
+/* app styles */
+.profile-pics{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}

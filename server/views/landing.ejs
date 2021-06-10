@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/landing.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+    <!-- import moderniz.min.css or copy the cdn -->
+    <title>YelpCamp</title>
+</head>
+<body> 
+
+<header>
+    
+    <div class="container">
+        <% if(error && error.length >0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <%}%>
+        <% if(success && success.length >0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    <div id="landing-header">
+        <h1>Welcome to YelpCamp</h1>
+        <a href="/campgrounds" class="btn btn-success">View All Campgrounds</a>
+
+    </div>
+
+    <ul class="slideshow">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</header>
+
+
+
+<%-include('./partials/footer')%>
